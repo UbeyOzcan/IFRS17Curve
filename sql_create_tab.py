@@ -6,7 +6,7 @@ import pyodbc
 
 def SQL_create_table(srv, db,country, year, month):
     
-     cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{SQL Server Natice Client 11.0}',server = srv , database = db)
+     cnxn = pyodbc.connect(Trusted_Connection='yes',server = srv , database = db)
      cursor = cnxn.cursor()
      sql = list()
      
