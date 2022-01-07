@@ -6,7 +6,7 @@ import pyodbc
 
 def SQL_create_table(srv, db,country, year, month):
     
-     cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{SQL Server}',server = srv , database = db)
+     cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{ODBC Driver 17 for SQL Server}',server = srv , database = db)
      cursor = cnxn.cursor()
      sql = list()
      
