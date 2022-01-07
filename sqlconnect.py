@@ -22,7 +22,7 @@ def SQL_upload(srv, db, country, df, year, month):
     
      
 
-    cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{SQL Server}' ,server = srv , database = db)
+    cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{Odbc Driver 17 for SQL Server}' ,server = srv , database = db)
     cursor = cnxn.cursor()
     sql = list()
     
