@@ -2,11 +2,11 @@ import pyodbc
 # server = 'localhost\SQLEXPRESS'
 # databaseName = 'master'
 # sql.append("CREATE TABLE %s" % table + " ( %s" % col1 + " float, %s" % col2 + " float)")
-# '{SQL Server Native Client 11.0}'
+# '{ODBC Driver 17 for SQL Server}'
 
 def SQL_create_table(srv, db,country, year, month):
     
-     cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{ODBC Driver 17 for SQL Server}',server = srv , database = db)
+     cnxn = pyodbc.connect(Trusted_Connection='yes', driver = '{SQL Server Native Client 11.0}',server = srv , database = db)
      cursor = cnxn.cursor()
      sql = list()
      
