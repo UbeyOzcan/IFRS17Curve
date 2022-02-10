@@ -2,6 +2,7 @@ import zipfile
 import urllib.request
 import pandas as pd
 import openpyxl
+import numpy as np
 
 def download_eiopa(url, country):
     
